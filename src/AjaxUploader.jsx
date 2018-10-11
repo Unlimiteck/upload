@@ -206,12 +206,18 @@ class AjaxUploader extends Component {
       [className]: className,
     });
     const events = disabled ? {} : {
-      onClick: openFileDialogOnClick ? this.onClick : () => { },
       onKeyDown: this.onKeyDown,
       onDrop: this.onFileDrop,
       onDragOver: this.onFileDrop,
       tabIndex: '0',
     };
+    
+    if (!disabled) {
+        if (openFileDialogOnClick) {
+            events['onClick'] = this.onClick;
+        }
+    }
+    
     return (
       <Tag
         {...events}
