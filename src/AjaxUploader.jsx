@@ -212,12 +212,6 @@ class AjaxUploader extends Component {
       tabIndex: '0',
     };
     
-    if (!disabled) {
-        if (openFileDialogOnClick) {
-            events['onClick'] = this.onClick;
-        }
-    }
-    
     return (
       <Tag
         {...events}

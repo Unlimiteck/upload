@@ -217,12 +217,6 @@ var AjaxUploader = function (_Component) {
         tabIndex: '0'
       };
 
-      if (!disabled) {
-        if (openFileDialogOnClick) {
-          events['onClick'] = this.onClick;
-        }
-      }
-
       return React.createElement(
         Tag,
         _extends({}, events, {
