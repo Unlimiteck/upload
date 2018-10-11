@@ -109,7 +109,7 @@ Upload.defaultProps = {
   beforeUpload: null,
   customRequest: null,
   withCredentials: false,
-  openFileDialogOnClick: true
+  openFileDialogOnClick: false
 };
 
 

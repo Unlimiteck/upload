@@ -54,7 +54,7 @@ class Upload extends Component {
     beforeUpload: null,
     customRequest: null,
     withCredentials: false,
-    openFileDialogOnClick: true,
+    openFileDialogOnClick: false,
   }
 
   state = {
